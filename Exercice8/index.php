@@ -4,7 +4,7 @@ $mois = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aoû
 <!DOCTYPE html>
 <html lang='fr' dir='ltr'>
 <head>
-  <title>Exercice 7</title>
+  <title>Exercice 8</title>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
@@ -14,7 +14,11 @@ $mois = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aoû
 
   <div class='row mt-5'>
     <div class='jumbotron shadow-lg mx-auto text-center'>
-      <p><?php print_r($mois) ?></p>
+      <p><?php
+      for($i = 0; $i < count($mois); $i++){
+        echo $mois[$i]. '<br>';
+      }
+      ?></p>
       <div class='text-right mt-1'>Un message de la direction</div>
     </div>
   </div>
